@@ -18,7 +18,8 @@ height: 100vh;
     top: calc(50% - 100px);
     left: calc(50% - 100px);
     transform: translateY(20px)translate() ;
-    
+    pointer-events: none;
+
 }
 .earth img{
     height: 200px;
@@ -26,7 +27,9 @@ height: 100vh;
     top: 0;
     left: 0;
     width: 200px;
-    animation: spin 100s linear infinite;
+    animation: spin 400s linear infinite;
+    pointer-events: none;
+
 }
 .moon-container{
     position: absolute;
@@ -35,7 +38,7 @@ height: 100vh;
 
 }
 .moon{
-    animation: spin 20s linear infinite;
+    animation: spin 150s linear infinite;
     background: none;
     height: 60px;
     pointer-events: none;
@@ -56,22 +59,22 @@ height: 100vh;
 
 .sun-container{
  
-    width: 500px;
+    width: 300px;
 
     
     position: absolute;
     top: calc(20% - 100px);
     left: calc(10% - 100px);
-    position: absolute;
-    height: 400px;
+   
+    height: 300px;
     pointer-events: none;
     
     
 }
 .sun img{
-    width: 500px;
-    box-shadow: 0 0 12em 1em rgba(251, 141, 31, 0.966);
-    height: 500px;
+    width: 250px;
+    box-shadow: 0 0 12em 1em rgba(251, 141, 31, 0.329);
+    height: 250px;
     border-radius: 50%;
     animation: spin 200s linear infinite;
     
@@ -82,4 +85,11 @@ height: 100vh;
 to{
     transform: rotateZ(360deg);
 }
+}
+#clock{
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
